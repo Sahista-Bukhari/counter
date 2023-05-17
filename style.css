@@ -1,0 +1,41 @@
+body {
+    background-color: pink;
+}
+
+p {
+    font-size: 45px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.box-1 {
+    margin-top: 300px;
+    text-align: center;
+}
+
+input[type="text"] {
+    padding: 10px;
+}
+
+input[placeholder="INCREMENT"] {
+    text-align: center;
+}
+
+input[placeholder="DECREMENT"] {
+    text-align: center;
+}
+
+input[placeholder="RESET"] {
+    text-align: center;
+
+}
+
+#counter-display {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    text-align: center;
+    font-size: 100px;
+}
