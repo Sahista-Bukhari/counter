@@ -1,41 +1,377 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: font-light;
+    src: url(../font/Gotham-Light.otf);
+}
+
+@font-face {
+    font-family: font-bold;
+    src: url(../font/Gotham-Bold.otf);
+}
+
 body {
-    background-color: pink;
+    font-family: font-light !important;
+    /* background-color: #150a4c !important; */
 }
 
-p {
-    font-size: 45px;
-    margin-top: 100px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: font-bold;
+}
+
+nav {
+    background-color: #150a4c;
+    padding: 15px 0px !important;
+}
+
+nav .logo {
+    height: 100px;
+}
+
+nav .logo img {
+    height: 100%;
+}
+
+nav .nav-link {
+    color: #fff;
+    transition: 0.5s;
+}
+
+nav .nav-link:focus {
+    color: #f0535a !important;
+    text-decoration: underline;
+}
+
+.navbar .collapse .navbar-nav .nav-item .nav-link:active {
+    color: #f0535a !important;
+    text-decoration: underline;
+}
+
+nav .nav-link:hover {
+    color: #f0535a !important;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+nav .nav-btn {
+    color: aliceblue;
+    background-color: #f0535a;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.navbar-toggler {
+    border: 1px solid #fff !important;
+    color: #fff !important;
+}
+
+#hero {
+    background-color: #150a4c;
+}
+
+#hero .hero-1 img,
+#hero .hero-2 img {
+    width: 100%;
+}
+
+#hero .hero-title {
+    color: #fff;
+}
+
+#hero .hero-contain {
+    padding-left: 80px;
+}
+
+#hero .hero-sign {
+    height: 80px;
+}
+
+#hero .hero-sign img {
+    height: 100%;
+    padding-left: 60px;
+}
+
+#hero .sign-name {
+    padding-left: 40px;
+}
+
+#hero .hero-social-icon {
+    display: flex;
+    justify-content: space-around;
+}
+
+#hero .hero-social-icon a img {
+    width: 60px;
+}
+
+.margin-top--100 {
+    margin: -100px 0px 0px 0px !important;
+    padding-bottom: 40px;
+}
+
+#section-info {
+    background-image: linear-gradient(to right, rgb(205, 255, 216), rgb(149, 186, 255));
+}
+
+#section-info .info-backgroung img {
+    width: 100%;
+}
+
+#section-info .container {
+    padding: 70px 0px;
+}
+
+footer {
+    background-color: #150a4c;
+    padding: 50px 0px 10px 0px;
+    position: relative;
+}
+
+footer .footer-logo {
+    height: 120px;
+}
+
+footer .footer-logo img {
+    height: 100%;
+}
+
+footer form {
+    position: relative;
+    padding-top: 50px;
+}
+
+footer form .fa-envelope {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    font-size: 25px;
+    color: rgb(66, 66, 66);
+}
+
+footer form .fa-arrow-right {
+    position: absolute;
+    background-color: #f0535a;
+    color: #fff;
+    padding: 15px;
+    border-radius: 60px;
+    right: 220px;
+    top: 50px;
+}
+
+footer form input {
+    padding: 10px 10px 10px 50px;
+    width: 60%;
+    border-radius: 50px;
+}
+
+footer ul {
+    padding: 0px;
+    list-style: none;
+    line-height: 35px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+footer .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0px;
+}
+
+footer .footer-bottom .footer-btn {
+    color: aliceblue;
+    background-color: #f0535a;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    width: 200px;
     text-align: center;
+    font-size: 20px;
 }
 
-.box-1 {
-    margin-top: 300px;
-    text-align: center;
+.container-padding {
+    padding: 80px 0px;
 }
 
-input[type="text"] {
-    padding: 10px;
+.bg-gradian {
+    background-image: linear-gradient(to right, rgb(205, 255, 216), rgb(149, 186, 255));
 }
 
-input[placeholder="INCREMENT"] {
-    text-align: center;
+.service-main a img {
+    height: 140px;
+    border-radius: 6px;
+    margin: 30px 0px;
 }
 
-input[placeholder="DECREMENT"] {
-    text-align: center;
+.service-one .service-contain p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
 }
 
-input[placeholder="RESET"] {
-    text-align: center;
-
+.service-img img {
+    width: 100%;
 }
 
-#counter-display {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 24px;
-    text-align: center;
-    font-size: 100px;
+.formation-img img {
+    width: auto;
+    height: 600px;
+}
+
+
+.formation-img-2 {
+    display: flex;
+    align-items: center;
+}
+
+.formation-img-2 img{
+    height: auto;
+    width: 500px;
+}
+
+.pt-80px {
+    padding-top: 80px;
+}
+
+.service-main-img:nth-child(5) {
+    display: flex;
+}
+
+.w-20 {
+    width: 20% !important;
+}
+
+.navbar .collapse .navbar-nav .nav-item .nav-link:active {
+    color: #150a4c !important;
+}
+
+.espace-img img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.espace-img span {
+    position: absolute;
+    /* overflow: hidden; */
+}
+
+.espace-img h5{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.uadoc a img {
+    height: 200px;
+    border-radius: 6px;
+    margin: 30px 0px;
+}
+@media screen and (max-width: 991px) {
+
+    #hero .hero-social-icon {
+        position: static;
+        padding-top: 120px;
+    }
+
+    #hero .hero-title {
+        text-align: center;
+    }
+
+    #hero .sign-name,
+    #hero .hero-contain {
+        padding: 0px;
+    }
+
+    .lap-d-none {
+        display: none;
+    }
+
+    .formation-img img{
+        width: 100%;
+        height: auto;
+    }
+
+    footer form .fa-arrow-right{
+        right: 68px;
+        top: 51px;
+    }
+
+    footer form input{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .service-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .service-img img {
+        width: 300px;
+    }
+
+    .flex-direction {
+        flex-direction: column-reverse;
+    }
+
+    footer form .fa-arrow-right {
+        right: 208px;
+        top: 22px;
+    }
+
+    footer form .fa-envelope {
+        top: 30px;
+    }
+
+    footer .footer-bottom {
+        flex-direction: column;
+    }
+
+    footer .footer-bottom .footer-btn {
+        margin-bottom: 10px;
+    }
+
+    .padding-lab {
+        padding-bottom: 30px;
+    }
+
+    footer form {
+        padding-top: 20px;
+    }
+
+    #hero .hero-1 {
+        height: 500px;
+    }
+
+    #hero .hero-1 img {
+
+        object-fit: cover;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    footer form input {
+        width: 100%;
+    }
+
+    footer form .fa-arrow-right {
+        right: 0px;
+        top: 22px;
+    }
 }
